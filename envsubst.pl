@@ -33,7 +33,10 @@ if (@services == 0) {
 }
 
 # Replace the placeholder in the template
-$template =~ s/\@PLACEHOLDER\@/$replacement/;
+$template =~ s/\@SERVICE\@/$replacement/;
+
+# Add also hostname
+$template =~ s/\@HOSTNAME\@/`hostname`/e;
 
 # Write the updated template to the output file
 open(my $out_fh, '>', $output_file) or die "Could not open file '$output_file' $!";
@@ -41,3 +44,4 @@ print $out_fh $template;
 close($out_fh);
 
 print "Template processing complete. Output written to '$output_file'.\n";
+

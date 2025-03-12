@@ -58,6 +58,17 @@
           font-family: monospace;
           color: #009688;
       }
+
+      p.hostname {
+        margin-top: 10pt;
+        font-size: 1em;
+      }
+
+      p.hostname span {
+        color: #2196F3;
+        font-family: monospace;
+        font-size: 1.1em;
+      }
     </style>
   </head>
   <body>
@@ -109,7 +120,8 @@
         d="m868.66,138c7.72,19.55,24.33,21.31,38.88,6.55,6.86,5.76,13.88,11.12,13.98,21.54.06,6.52-2.67,10.51-8.33,13.39-8.58,4.37-17.09,8.94-25.34,13.91-6.96,4.2-13.5,9.1-20.24,13.67-4.8,3.25-5.98,3.05-10.74-.06-8.13-5.32-12.05-12.96-13.27-22.35-2.09-16.15.97-30.72,12.54-42.89,3.41-3.59,7.3-5.03,12.53-3.75Z"
       />
     </svg>
-    <p>@PLACEHOLDER@</p>
     <h1>Hello There!</h1>
+    <p>@SERVICE@</p>
+    <p class="hostname">And my hostname is <span>@HOSTNAME@</span></p>
   </body>
 </html>
