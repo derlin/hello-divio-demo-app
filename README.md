@@ -3,6 +3,8 @@
 This is a simple nginx server with an index.html saying hello and showing the number (and type) of services
 currently attached.
 
+![overview](overview.png)
+
 ## Run locally
 
 To build and run locally:
